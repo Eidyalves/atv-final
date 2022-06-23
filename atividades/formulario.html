@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulários</title>
+	</head>
+	<body>
+		<fieldset style="width: 50%;">
+		<h1>Formulário de Inscrição Evento</h1> 
+			<form action="" method="get">
+				<label for="nome completo">Nome Completo:</label>
+					<input type="text" name="Nome Completo:" id="nomecompleto">
+						<br><br>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" />
+                        <br>
+						<label for="sexo">Sexo:</label>
+						<label for="masc" >Masculino</label>
+					<input type="radio" name="sexo" value="M" id="masc">
+				<label for="fem">Feminino</label>
+			<input type="radio" name="sexo" value="F" id="fem">
+				<br><br>
+            <label for="text">Cargo:</label>
+            <input type="text" name="Cargo:" id="cargo">
+					<br><br
+					<label for="text">Nascimento:</label>
+					<input type="text" name="Nascimento:" id="nascimento"
+					<br><br><br>
+						<label for="telefone">Telefone:</label>
+						<input type="text" name="telefone" placeholder="(99)9999-9999" size="30" maxlength="13" id="telefone">
+					<br><br>
+		</fieldset>
+			<h1>Informações da Instituição</h1> 
+			<p>Preencha os campos abaixo com as insformações da empresa em que trabalha.</p>
+			<fieldset style="width: 50%;">
+				<form action="" method="get">
+					<label for="Empresa">Empresa:</label>
+						<input type="text" name="Empresa:" id="empresa">
+							<br><br>
+						<label for="Endereço Completo">Endereço Completo:</label>
+					<input type"text" name="endereço completo" id="endereço">
+							<br><br>
+							<label for="Cidade">Cidade:</label>
+					<input type"text" name="cidade" id="cidade">
+						<br><br
+							<label for="text">Nascimento:</label>
+							<input type="text" name="Nascimento:" id="nacimento">
+						<br><br>
+							<label style="position: initial;" for="text">Cidade</label>
+							<input type="text" name="ciadede:" id="cidade">
+						<br><br>
+						<fieldset style="width: 30%;">
+							<legend>Estado</legend>
+						<select name="estado" size="0">
+							<option selected disabled>Selecione</option>
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="BA">Ceará</option>
+							<option value="CE">Distrito Federal</option>
+							<option value="DF">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS"> Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="Se">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+							</fieldset>
+								<br>
+						<label for="quant.funcionários">Quant. Funcionários:</label>
+					<input type"text" name="quant.funcionários" id="funcionarios">
+					<br><br>
+					<label for="mensagem">Observações</label>
+					<br>
+						<textarea id="observação" name="observação" rows="10" cols="40"></textarea>
+						<br><br>
+						<label for="recibo">Recibo:</label><br>
+					<input type="checkbox" name="recibo" value="emitir em nome da instituição.">Emitir em nome da instituição
+					<br><br>
+
+						<input type="submit" value="Fazer Inscrição">
+			</fieldset>
+	</body>
+</html>

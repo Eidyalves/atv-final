@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(170, 170, 170);
+ 
+}
+
+.column1 {
+    background-color: rgb(61, 61, 61);
+    height: 100vh;
+    width: 20vw;
+}
+
+#imgeidy {
+    height: 30vh;
+    border-radius: 50%;
+    border: 5px solid rgb(97, 97, 97);
+}
+
+.imgeidy2 {
+    text-align: center;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.linkmenu{
+    font-size: 4vh;
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+.linkmenu2{
+    font-size: 4vh;
+    color: rgb(23, 38, 104);
+    text-decoration: none;
+}
+.title {
+    font-size: 8vh;
+    margin: auto auto 3vh 5vw;
+}
+
+.title2 {
+    font-size: 4vh;
+    margin: auto auto 3vh 5vw;
+    
+}
+
+.titlemode {
+    color: rgb(8, 0, 126);
+}
+
+.text {
+    margin: 1vh auto 1vh 5vw;
+    font-size: 2vh;
+}
+
+.navicon {
+    margin-left: 4vw;
+}
+
+.iconsocial {
+    height: 6vh;
+    margin: 10px;
+    margin: 0vh auto auto 1vw;
+
+}
+
+.list {
+    margin: 1vh auto 1vh 8vw;
+    font-size: 3vh;
+}
+
+.list2 {
+    margin: 1vh auto 1vh 6vw;
+    font-size: 3vh;
+}
+
+.mention {
+    margin: 5vh 5vw;
+    text-align: end;
+    font-size: 2vh;
+}

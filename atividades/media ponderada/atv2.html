@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-2</title>
+    <style>
+        body{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container-fluid">
+        <h1>Exercicio 1</h1>
+        <p>Um motorista deseja colocar no seu tanque X reais de gasolina ou alcool. 
+            Criar uma aplicação para ler a quantidade de dinheiro que deseja gastar e capacidade 
+            máxima do tanque do carro que deseja abastecer (utilizar 2 caixas de texto). Em seguida o 
+            usuário deve escolher o tipo de combustível(alcool ou gasolina) (através de 2 inputs do tipo radio). 
+            Calcular e exibir quantos litros ele conseguiria comprar e, caso esta quantidade seja maior que a capacidade 
+            máxima do tanque, mostrar uma mensagem informando isto ao usuário. </p>
+    </div>
+    <label for="tanque">Capacidade do tanque de combustível:</label> <input type="number" name="tanquecom" id="tanquecom"> <br>
+    <label for="valorg">Valor para gastar:</label> <input type="number" name="valorgas" id="valorgas">
+
+    <br>
+    <form>
+        <input type="radio" name="alGa" id="alcool"> <label for="alco">Álcool</label>
+        <input type="radio" name="alGa" id="gasolina"> <label for="gaso">Gasolina</label>
+    </form>
+
+    <br>
+
+    <input type="button" value="Calcular" onclick="calcular()">
+    <input type="button" value="Novo" onclick="window.location.reload()">
+   
+    <p>Você pode comprar: <span id="span1"></span></p>
+    <p id="cuidado"></p> 
+
+    <script>
+        function calcular(){
+            var tan =  window.document.getElementById('tanquecom')
+            var valorg = window.document.getElementById('valorgas');
+            var res = window.document.getElementById('span1');
+            var resu = window.document.getElementById('cuidado')
+
+            var n1 = Number(tan.value);
+            var n2 = Number(valorg.value);
+
+            if(document.getElementById('alcool').checked){
+                res.innerHTML = parseInt(n2/3.96);
+                }
+            else{
+                res.innerHTML = parseInt(n2/4.75);
+            }
+            if(res.innerHTML > n1){
+                resu.innerHTML = ("Você excedeu o limite");
+            }else{
+                resu.innerHTML = ("Cuidado para não exceder o limite")
+            }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+let dragItens = document.querySelectorAll("[draggable='true']");
+let dropBoxes = document.querySelectorAll(".drop");
+
+
+function comecarArrastar(e){
+    e.dataTransfer.setData('text/plain', e.target.innerText);
+    setTimeout(() => {
+        this.classList.add("invisible");
+    },0);    
+}
+
+function entrouSoltar(e){
+    e.preventDefault();
+    console.log("dragging over");
+    this.classList.add("enter");
+}
+
+function dropEvent(e){
+    e.preventDefault();
+
+    let ele = document.createElement('p');
+    ele.classList.add("drag");
+    ele.innerHTML = e.dataTransfer.getData('text');
+
+    this.appendChild(ele)
+}
+
+function saiuSoltar (e){
+    e.preventDefault();
+    this.classList.add("drop-item");
+}
+
+dragItens.forEach((dragItens) => {
+    dragItens.addEventListener("dragstart", comecarArrastar);
+})
+
+dropBoxes.forEach((dropBoxes) => {
+    dropBoxes.addEventListener("dragover",  entrouSoltar);
+    dropBoxes.addEventListener("drop", dropEvent);
+    dropBoxes.addEventListener("dragleave", saiuSoltar)
+});
